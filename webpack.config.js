@@ -5,7 +5,12 @@ var extractTextPlugin = require('extract-text-webpack-plugin');
 module.exports = {
   entry: {
     app: './resources/assets/js/main.js',
-    vendor: ['vue', 'vue-resource', 'vue-router', 'vuestrap', 'bulma', 'font-awesome/scss/font-awesome']
+    'vendor.js': ['vue', 'vue-resource', 'vue-router', 'vuestrap', 'bulma', 'font-awesome/scss/font-awesome']
+  },
+  output: {
+    path: path.resolve(__dirname, `./public`),
+    publicPath: `./public/`,
+    filename: '[name].js'
   },
   resolveLoader: {
     root: [path.join(__dirname, 'node_modules')]
@@ -40,13 +45,16 @@ module.exports = {
       // loader: 'style-loader!css-loader!autoprefixer-loader!sass-loader!vuestrap-theme-loader'
     }, {
       test: /\.(png|jpg|jpeg|gif)$/,
-      loader: `file?name=../static/[name].[ext]`
+      // loader: `file?name=../static/[name].[ext]`
+      loader: 'url'
     }, {
       test: /\.(svg|eot|ttf)(\?v=\d+\.\d+\.\d+)?$/,
-      loader: `file?name=../static/[name].[ext]`
+      // loader: `file?name=../static/[name].[ext]`
+      loader: 'url'
     }, {
       test: /\.woff(\d+)?(\?v=\d+\.\d+\.\d+)?$/,
-      loader: `file?name=../static/[name].[ext]`
+      // loader: `file?name=../static/[name].[ext]`
+      loader: 'url'
     }]
   },
   plugins: [
@@ -56,9 +64,9 @@ module.exports = {
       VueResource: 'vue-resource',
       VueRouter: 'vue-router'
     }),
-    new webpack.optimize.CommonsChunkPlugin({
-      name: 'vendor'
-    })
+    new webpack.optimize.CommonsChunkPlugin(
+      'vendor', 'vendor.js'
+    )
   ],
   devServer: {
     historyApiFallback: true,
