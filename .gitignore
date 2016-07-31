@@ -1,5 +1,9 @@
 /.idea
 /vendor
-.env
 /node_modules
+/public/js
+/public/static
+/public/stylesheets
+/public/php_errors.log
+.env
 
