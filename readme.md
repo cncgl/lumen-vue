@@ -1,9 +1,8 @@
 # Lumen-Vue
 
-Sample for Lumen + laravel-elixir + webpack + Vue.js
+[![Dependency Status](https://gemnasium.com/badges/github.com/cncgl/lumen-vue.svg)](https://gemnasium.com/github.com/cncgl/lumen-vue)
 
-[![Dependency Status](https://david-dm.org/cncgl/lumen-vue.svg)](https://david-dm.org/cncgl/lumen-vue)
-[![devDependency Status](https://david-dm.org/cncgl/lumen-vue/dev-status.svg)](https://david-dm.org/cncgl/lumen-vue#info=devDependencies)
+Sample for Lumen + laravel-elixir + webpack + Vue.js
 
 ## for development
 ```
