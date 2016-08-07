@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "456df925112335ac7acea3147f5d0fbd",
+    "hash": "f65ac8649e93e531ad2082c686883fda",
     "content-hash": "be56596918ef42a15b75d881aaedbd55",
     "packages": [
         {
@@ -1136,16 +1136,16 @@
         },
         {
             "name": "laravel/lumen-framework",
-            "version": "v5.2.7",
+            "version": "v5.2.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/lumen-framework.git",
-                "reference": "e9fed189e1a20273a3696dfab8b413b2e721d2d9"
+                "reference": "9c90bfdb15a4f4761ed49de4afcffa9fcbfd5033"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/lumen-framework/zipball/e9fed189e1a20273a3696dfab8b413b2e721d2d9",
-                "reference": "e9fed189e1a20273a3696dfab8b413b2e721d2d9",
+                "url": "https://api.github.com/repos/laravel/lumen-framework/zipball/9c90bfdb15a4f4761ed49de4afcffa9fcbfd5033",
+                "reference": "9c90bfdb15a4f4761ed49de4afcffa9fcbfd5033",
                 "shasum": ""
             },
             "require": {
@@ -1216,20 +1216,20 @@
                 "laravel",
                 "lumen"
             ],
-            "time": "2016-06-06 16:13:21"
+            "time": "2016-08-01 14:48:25"
         },
         {
             "name": "monolog/monolog",
-            "version": "1.20.0",
+            "version": "1.21.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "55841909e2bcde01b5318c35f2b74f8ecc86e037"
+                "reference": "f42fbdfd53e306bda545845e4dbfd3e72edb4952"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/55841909e2bcde01b5318c35f2b74f8ecc86e037",
-                "reference": "55841909e2bcde01b5318c35f2b74f8ecc86e037",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/f42fbdfd53e306bda545845e4dbfd3e72edb4952",
+                "reference": "f42fbdfd53e306bda545845e4dbfd3e72edb4952",
                 "shasum": ""
             },
             "require": {
@@ -1294,7 +1294,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2016-07-02 14:02:10"
+            "time": "2016-07-29 03:23:52"
         },
         {
             "name": "mtdowling/cron-expression",
