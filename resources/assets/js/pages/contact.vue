@@ -4,8 +4,8 @@
     .container
       form.form-horizontal
         .form-group
-          label.col-md-6.control-label(for='name01') お名前
-          .col-md-6
+          label.col-sm-6.control-label(for='name01') お名前
+          .col-sm-6
             input.form-control(type='text', name='name', id='name01', placeholder='お名前')
     footer-component
 </template>
