@@ -20,7 +20,7 @@ module.exports = {
     extensions: ['', '.js' , '.scss' , '.vue']
   },
   themeLoader: {
-    themes: ['./resources/assets/stylesheets/theme.scss', './node_modules/vuestrap/theme/_bootstrap.scss'],
+    themes: ['./resources/assets/stylesheets/theme.scss', './node_modules/vuestrap/theme/_bootstrap.scss']
   },
   module: {
     loaders: [{
