@@ -1,5 +1,4 @@
 <template lang="jade">
-  header-component
   .container
     form.form-horizontal(method='post', action='index.php')
       .form-group.row
@@ -15,7 +14,6 @@
         .col-sm-6
           textarea.form-control(name='comment', id='comment01', placeholder='コメント')
 
-  footer-component
 </template>
 
 <style lang="sass">
@@ -25,17 +23,11 @@
 </style>
 
 <script>
-  import HeaderComponent from '../components/Header.vue'
-  import FooterComponent from '../components/Footer.vue'
   export default{
     data(){
       return{
         msg: 'hello vue'
       }
-    },
-    components:{
-      'footer-component': FooterComponent,
-      'header-component': HeaderComponent,
     }
   }
 </script>
