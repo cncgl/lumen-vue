@@ -6,6 +6,32 @@
 
 Sample for Lumen + laravel-elixir + webpack + Vue.js
 
+## Install
+
+### clone from repository
+```
+$ git clone https://github.com/cncgl/lumen-vue
+```
+
+### download libraries
+```
+$ composer update
+$ npm install
+```
+
+### generate .env file.
+```
+$ cp .env.sample .env
+$ php keygenerate.php
+<string with length 32>
+```
+copy string to APP_KEY in .env
+
+### create database by mysql
+```
+$ php artisan migrate
+```
+
 ## for development
 ```
 php -S 0.0.0.0:4000 -t public

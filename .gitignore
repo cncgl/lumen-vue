@@ -7,3 +7,4 @@
 /public/php_errors.log
 .env
 
+php_errors.log
