@@ -22,7 +22,7 @@ class ContactController extends Controller
     ];
     // ジョブのインスタンスを生成
     $job = new SendEmail(
-      'emails.reservation',
+      'emails.contact',
       ['name' => ucfirst('niikunihiro')],
       $mail
     );

@@ -2,12 +2,14 @@
 
 namespace App\Jobs;
 
-// use Illuminate\Contracts\Bus\SelfHandling;
+use Illuminate\Contracts\Bus\SelfHandling;
 use Illuminate\Contracts\Mail\Mailer;
+// use Illuminate\Mail\Mailer;
+// use Illuminate\Support\Facades\Mail;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
-// class SendEmail extends Job implements SelfHandling, ShouldQueue {
-class SendEmail extends Job implements ShouldQueue {
+class SendEmail extends Job implements SelfHandling, ShouldQueue {
+// class SendEmail extends Job implements ShouldQueue {
 
   /** @var string view name */
   protected $view;
