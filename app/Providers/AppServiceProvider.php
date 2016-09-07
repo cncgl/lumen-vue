@@ -3,7 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Illuminate\Contracts\Mail\Mailer;
+// use Illuminate\Contracts\Mail\Mailer;
 use DB;
 use Log;
 
