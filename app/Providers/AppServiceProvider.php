@@ -26,9 +26,9 @@ class AppServiceProvider extends ServiceProvider
     // if (!app()->environment('production')) {
 
     // if (app()->isLocal() || app()->runningUnitTests()) {
-      DB::listen(function ($query) {
-        Log::debug('sql', [$query->sql, $query->bindings, $query->time]);
-      });
+//      DB::listen(function ($query) {
+//        Log::debug('sql', [$query->sql, $query->bindings, $query->time]);
+//      });
     // }
   }
 }
