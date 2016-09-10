@@ -11,11 +11,11 @@
 |
 */
 
-$app->get('/', function () use ($app) {
-    return $app->version();
-});
-//$app->get('/', function () {
-//  return file_get_contents(public_path() . '/index.html');
+//$app->get('/', function () use ($app) {
+//    return $app->version();
 //});
+$app->get('/', function () {
+  return file_get_contents(public_path() . '/index.html');
+});
 
 // $app->get('contact', 'ContactController@store');
