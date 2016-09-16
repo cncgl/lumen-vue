@@ -8,6 +8,9 @@
             .nav-left
               a.nav-item(v-link="{path: '/'}")
                 span vue-boilerplate
+              a.nav-item(v-link="{path: '/new'}")
+                span new post
+
             .nav-right.nav-menu
               a.nav-item(v-link="{path: '/blog'}")
                 span blog
