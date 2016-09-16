@@ -34,7 +34,17 @@ $ php artisan migrate
 
 ## for development
 ```
-php -S 0.0.0.0:4000 -t public
+$ php -S 0.0.0.0:4000 -t public
+```
+
+development build
+```
+$ gulp
+```
+
+watch
+```
+$ gulp watch
 ```
 
 ## License
