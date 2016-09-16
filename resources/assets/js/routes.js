@@ -10,6 +10,9 @@ export default {
   '/': {
     component: top
   },
+  '/new': {
+    component: post
+  },
   '/blog': {
     component: blog
   },
