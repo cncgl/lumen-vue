@@ -8,3 +8,6 @@
 .env
 
 php_errors.log
+
+/database/database.sqlite
+
