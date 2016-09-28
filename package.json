@@ -20,7 +20,7 @@
     "font-awesome": "^4.6.3",
     "laravel-elixir": "^6.0.0-11",
     "laravel-elixir-webpack-ex": "0.0.5",
-    "vue": "^1.0.26",
+    "vue": "^1.0.28",
     "vue-resource": "^0.9.3",
     "vue-router": "^0.7.13",
     "vuestrap": "^1.0.3"
@@ -47,7 +47,7 @@
     "url-loader": "^0.5.7",
     "vue-hot-reload-api": "^1.3.3",
     "vue-html-loader": "^1.2.3",
-    "vue-loader": "^8.5.3",
+    "vue-loader": "^8.5.4",
     "vue-style-loader": "^1.0.0",
     "vuestrap-theme-loader": "^0.1.2"
   }
