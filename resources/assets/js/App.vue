@@ -10,6 +10,8 @@
                 span vue-boilerplate
               a.nav-item(v-link="{path: '/new'}")
                 span new post
+              a.nav-item(v-link="{path: '/posts'}")
+                span posts
 
             .nav-right.nav-menu
               a.nav-item(v-link="{path: '/blog'}")
