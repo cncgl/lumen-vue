@@ -9,17 +9,17 @@
     }
 </style>
 <script>
-    import HeaderComponent from './components/header.vue'
-    import OtherComponent from './components/other.vue'
-    export default{
-        data(){
-            return{
-                msg:'hello vue'
-            }
-        },
-        components:{
-            'other-component':OtherComponent,
-            HeaderComponent,
-        }
+  import HeaderComponent from '../components/Header.vue'
+  import FooterComponent from '../components/Footer.vue'
+  export default{
+    data(){
+      return{
+        msg:'hello vue'
+      }
+    },
+    components:{
+      'footer-component': FooterComponent,
+      'header-component': HeaderComponent,
     }
+  }
 </script>
