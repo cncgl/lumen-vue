@@ -7,12 +7,10 @@
         textarea.form-control
 </template>
 <style lang="sass">
-  body {
-    background-color: #ff0000;
-  }
-  .container {
-    margin-top: 10px;
-  }
+  body
+    background-color: #ff0000
+  .container
+    margin-top: 10px
 
 </style>
 <script>

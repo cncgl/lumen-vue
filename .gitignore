@@ -11,3 +11,4 @@ php_errors.log
 
 /database/database.sqlite
 
+/tests/js/coverage
