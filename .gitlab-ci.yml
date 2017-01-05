@@ -1,5 +1,5 @@
 # image: node:latest
-image: docker pull dsferruzza/php-node-build
+image: dsferruzza/php-node-build
 
 # services:
 #   - mysql:latest
