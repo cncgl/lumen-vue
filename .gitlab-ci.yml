@@ -1,4 +1,5 @@
-image: node:latest
+# image: node:latest
+image: docker pull dsferruzza/php-node-build:latest
 
 # services:
 #   - mysql:latest
@@ -11,3 +12,8 @@ test_acync:
   script:
     - npm install
     - npm test
+
+test_php:
+  script:
+    - composer update
+    - ./vendor/bin/phpunit
