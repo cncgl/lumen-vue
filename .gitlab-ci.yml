@@ -1,5 +1,7 @@
-# image: node:latest
 image: dsferruzza/php-node-build
+
+before_script:
+  - apt install -y libfontconfig
 
 # services:
 #   - mysql:latest
