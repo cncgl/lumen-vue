@@ -12,6 +12,10 @@ class ArticleTableSeeder extends Seeder
 {
   public function run()
   {
+    DB::table('articles')->insert([
+      'title' => 'test',
+      'contents' => 'test'
+    ]);
     factory(\App\Article::class, 10)->create();
   }
 }

@@ -4,6 +4,7 @@ use Laravel\Lumen\Testing\DatabaseTransactions;
 
 class ExampleTest extends TestCase
 {
+  use DatabaseTransactions;
   /**
    * A basic test example.
    *
@@ -11,6 +12,7 @@ class ExampleTest extends TestCase
    */
   public function testExample()
   {
-    $this->assertTrue(true);
+    $this->seeInDatabase('articles', ['title' => 'test']);
+    // $this->assertTrue(true);
   }
 }
