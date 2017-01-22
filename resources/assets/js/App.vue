@@ -7,7 +7,7 @@
           nav.nav
             .nav-left
               a.nav-item(v-link="{path: '/'}")
-                span vue-boilerplate
+                span lumen-vue
               a.nav-item(v-link="{path: '/new'}")
                 span new post
               a.nav-item(v-link="{path: '/posts'}")
