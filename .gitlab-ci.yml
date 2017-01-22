@@ -4,13 +4,16 @@ before_script:
   - apt-get update
   - apt-get install -y libfontconfig apt-utils php5-mysql php5-curl
   - cp gitlab.env .env
+  - php artisan key:generate
+  - php artisan config:cache
+  - php artisan migrate
 
 services:
   - mysql:latest
 
 variables:
   MYSQL_DATABASE: lumen-vue
-  MYSQL_ROOT_PASSWORD: mysql
+  MYSQL_ROOT_PASSWORD: secret
 
 cache:
   paths:
