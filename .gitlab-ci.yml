@@ -37,6 +37,7 @@ test_acync:
 
 test_php:
   script:
+    - echo "SELECT 'OK';" | mysql --user=root --password="$MYSQL_ROOT_PASSWORD" --host=mysql "$MYSQL_DATABASE"
     - composer update
     - ./vendor/bin/phpcs
     - ./vendor/bin/phpunit
