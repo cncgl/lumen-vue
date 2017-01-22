@@ -2,7 +2,7 @@ image: dsferruzza/php-node-build
 
 before_script:
   - apt-get update
-  - apt-get install -y libfontconfig
+  - apt-get install -y libfontconfig apt-utils
 
 # services:
 #   - mysql:latest
