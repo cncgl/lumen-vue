@@ -4,7 +4,12 @@ before_script:
   - apt-get update
   - apt-get install -y libfontconfig apt-utils php5-mysql php5-curl
   - cp gitlab.env .env
-  - which php
+  - php -r "readfile('https://getcomposer.org/installer');" > composer-setup.php
+  - php composer-setup.php --install-dir=/usr/local/bin --filename=composer
+  - php -r "unlink('composer-setup.php');"
+  - php -v
+  - git --version
+  - composer --version
   - php artisan key:generate
   - php artisan config:cache
   - php artisan migrate
