@@ -22,14 +22,13 @@ class ContactController extends Controller
     ];
     // ジョブのインスタンスを生成
     $job = new SendEmail(
-      'emails.contact',
-      ['name' => ucfirst('niikunihiro')],
-      $mail
+        'emails.contact',
+        ['name' => ucfirst('niikunihiro')],
+        $mail
     );
     // jobs テーブルに登録
     $this->dispatch($job);
     echo 'finished!';
-
   }
 
   //

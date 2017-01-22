@@ -8,7 +8,8 @@ use Illuminate\Contracts\Mail\Mailer;
 // use Illuminate\Support\Facades\Mail;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
-class SendEmail extends Job implements SelfHandling, ShouldQueue {
+class SendEmail extends Job implements SelfHandling, ShouldQueue
+{
 // class SendEmail extends Job implements ShouldQueue {
 
   /** @var string view name */
@@ -31,8 +32,7 @@ class SendEmail extends Job implements SelfHandling, ShouldQueue {
   public function handle(Mailer $mailer)
   {
     $mail = $this->mail;
-    $mailer->send($this->view, $this->data, function ($message) use ($mail)
-    {
+    $mailer->send($this->view, $this->data, function ($message) use ($mail) {
       $message->subject($mail['subject'])
         ->from($mail['from'], $mail['f_name'])
         ->to($mail['to'], $mail['to_name']);
