@@ -10,6 +10,8 @@ before_script:
   - php -v
   - git --version
   - composer --version
+  - composer self-update
+  - composer install --no-interaction
   - php artisan key:generate
   - php artisan config:cache
   - php artisan migrate
