@@ -16,6 +16,11 @@ cache:
   paths:
     - node_modules/
 
+connect:
+  image: mysql
+  script:
+  - echo "SELECT 'OK';" | mysql --user=root --password="$MYSQL_ROOT_PASSWORD" --host=mysql "$MYSQL_DATABASE"
+
 test_acync:
   script:
     - npm install
