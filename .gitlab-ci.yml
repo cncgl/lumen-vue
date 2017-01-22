@@ -12,7 +12,6 @@ before_script:
   - composer --version
   - composer self-update
   - composer install --no-interaction
-  - php artisan migrate
 
 services:
   - mysql:latest
@@ -38,6 +37,6 @@ test_acync:
 test_php:
   script:
     - echo "SELECT 'OK';" | mysql --user=root --password="$MYSQL_ROOT_PASSWORD" --host=mysql "$MYSQL_DATABASE"
-    - composer update
+    - php artisan migrate
     - ./vendor/bin/phpcs
     - ./vendor/bin/phpunit
