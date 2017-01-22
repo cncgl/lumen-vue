@@ -1,8 +1,8 @@
 image: dsferruzza/php-node-build
 
 before_script:
-  - apt-get update
-  - apt-get install -y libfontconfig apt-utils php5-mysql php5-curl
+  - apt-get update -yqq
+  - apt-get install -yqq libfontconfig apt-utils php5-mysql php5-curl
   - cp gitlab.env .env
   - php -r "readfile('https://getcomposer.org/installer');" > composer-setup.php
   - php composer-setup.php --install-dir=/usr/local/bin --filename=composer
@@ -12,6 +12,7 @@ before_script:
   - composer --version
   - composer self-update
   - composer install --no-interaction --optimize-autoloader
+  - ping -c 3 mysql
 
 services:
   - mysql:latest
@@ -19,6 +20,9 @@ services:
 variables:
   MYSQL_DATABASE: lumen-vue
   MYSQL_ROOT_PASSWORD: secret
+  MYSQL_USER: lumen-vue
+  MYSQL_PASSWORD: secret
+  COMPOSER_HOME: /cache/composer
 
 cache:
   paths:
