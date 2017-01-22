@@ -4,6 +4,7 @@ before_script:
   - apt-get update
   - apt-get install -y libfontconfig apt-utils php5-mysql php5-curl
   - cp gitlab.env .env
+  - which php
   - php artisan key:generate
   - php artisan config:cache
   - php artisan migrate
@@ -19,10 +20,10 @@ cache:
   paths:
     - node_modules/
 
-connect:
-  image: mysql
-  script:
-  - echo "SELECT 'OK';" | mysql --user=root --password="$MYSQL_ROOT_PASSWORD" --host=mysql "$MYSQL_DATABASE"
+#connect:
+#  image: mysql
+#  script:
+#  - echo "SELECT 'OK';" | mysql --user=root --password="$MYSQL_ROOT_PASSWORD" --host=mysql "$MYSQL_DATABASE"
 
 test_acync:
   script:
