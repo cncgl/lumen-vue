@@ -2,10 +2,15 @@ image: dsferruzza/php-node-build
 
 before_script:
   - apt-get update
-  - apt-get install -y libfontconfig apt-utils
+  - apt-get install -y libfontconfig apt-utils php5-mysql php5-curl
+  - cp gitlab.env .env
 
-# services:
-#   - mysql:latest
+services:
+  - mysql:latest
+
+variables:
+  MYSQL_DATABASE: lumen-vue
+  MYSQL_ROOT_PASSWORD: mysql
 
 cache:
   paths:
