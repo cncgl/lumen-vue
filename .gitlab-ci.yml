@@ -11,7 +11,7 @@ before_script:
   - git --version
   - composer --version
   - composer self-update
-  - composer install --no-interaction
+  - composer install --no-interaction --optimize-autoloader
 
 services:
   - mysql:latest
