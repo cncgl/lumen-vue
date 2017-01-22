@@ -14,9 +14,6 @@ before_script:
   - composer install --no-interaction --optimize-autoloader
   - ping -c 3 mysql
 
-services:
-  - mysql:latest
-
 variables:
   MYSQL_DATABASE: lumen-vue
   MYSQL_ROOT_PASSWORD: secret
@@ -34,11 +31,17 @@ cache:
 #  - echo "SELECT 'OK';" | mysql --user=root --password="$MYSQL_ROOT_PASSWORD" --host=mysql "$MYSQL_DATABASE"
 
 test_acync:
+  services:
+    - mysql:latest
+
   script:
     - npm install
     - npm test
 
 test_php:
+  services:
+    - mysql:latest
+
   script:
     - php artisan migrate
     - ./vendor/bin/phpcs
