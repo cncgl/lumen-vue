@@ -19,3 +19,5 @@ $app->get('/', function () {
 });
 
 // $app->get('contact', 'ContactController@store');
+// can't use resource
+$app->get('/articles', 'ArticleController@index');

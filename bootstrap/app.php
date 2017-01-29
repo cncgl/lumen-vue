@@ -80,7 +80,10 @@ $app->singleton(
 
 // $app->register(App\Providers\AppServiceProvider::class);
 // $app->register(App\Providers\AuthServiceProvider::class);
-// $app->register(App\Providers\EventServiceProvider::class);
+$app->register(App\Providers\EventServiceProvider::class);
+if (env('APP_ENV') != 'production' || env('APP_ENV') == 'local') {
+  $app->register(MichaelB\LumenMake\LumenMakeServiceProvider::class);
+}
 
 /*
 |--------------------------------------------------------------------------
@@ -94,7 +97,7 @@ $app->singleton(
 */
 
 $app->group(['namespace' => 'App\Http\Controllers'], function ($app) {
-    require __DIR__.'/../app/Http/routes.php';
+  require __DIR__.'/../app/Http/routes.php';
 });
 
 // $app->configure('services');

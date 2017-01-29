@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "290af99bedfd678749ded1ec16041aad",
-    "content-hash": "3e3c8adb09e3d922b805760e312d7de0",
+    "hash": "43d56f8ba1a8f98b14d48b61b4f4c27a",
+    "content-hash": "d9d488b57adbf0f0e13216761007a103",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -1220,6 +1220,42 @@
                 "lumen"
             ],
             "time": "2016-08-01 14:48:25"
+        },
+        {
+            "name": "michaelb/lumen-make",
+            "version": "v1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/michaelbonds/lumen-make.git",
+                "reference": "291b0b1feae92db814a528f9ef49ae54dcf418df"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/michaelbonds/lumen-make/zipball/291b0b1feae92db814a528f9ef49ae54dcf418df",
+                "reference": "291b0b1feae92db814a528f9ef49ae54dcf418df",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/lumen-framework": "~5.1"
+            },
+            "type": "lumen",
+            "autoload": {
+                "psr-4": {
+                    "MichaelB\\LumenMake\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Bonds",
+                    "email": "mbonds1219@gmail.com"
+                }
+            ],
+            "description": "Lumen make adds more make commands to lumen for jobs, controllers, middleware, etc.",
+            "time": "2016-01-20 22:46:21"
         },
         {
             "name": "monolog/monolog",
